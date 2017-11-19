@@ -1,0 +1,9 @@
+---
+- name: "Install debsums"
+  apt: name=debsums state=present
+- name: "Configure cron to run debsums regulary. interval: {{ debsums_cron_check }}"
+  lineinfile: dest="/etc/default/debsums"
+              line="CRON_CHECK={{ debsums_cron_check}}"
+              regexp="^CRON_CHECK"
+              create=yes
+  notify: restart crond

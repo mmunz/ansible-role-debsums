@@ -1,0 +1,3 @@
+---
+- name: "Uninstall debsums"
+  apt: name=debsums state=absent purge=yes

@@ -1,0 +1,6 @@
+---
+# handlers file for c1.debsums
+- name: restart crond
+  service:
+    name: "cron"
+    state: restarted

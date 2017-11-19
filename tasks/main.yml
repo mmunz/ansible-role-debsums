@@ -1,0 +1,9 @@
+---
+# tasks file for c1.debsums
+
+- include: install-deb.yml
+  when: debsums_enabled
+  tags: [debsums]
+- include: uninstall-deb.yml
+  when: not debsums_enabled
+  tags: [debsums]

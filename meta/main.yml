@@ -1,0 +1,17 @@
+galaxy_info:
+  author: Manuel Munz
+  description: Install and configure debsums
+  company: comuno.net
+  
+  license: BSD
+  
+  min_ansible_version: 2.2
+
+  platforms:
+  - name: Debian
+    versions:
+    - wheezy
+    - jessie
+    - stretch
+  
+  galaxy_tags: ['debsums']

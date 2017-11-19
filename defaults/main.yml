@@ -1,0 +1,7 @@
+---
+# defaults file for c1.debsums
+
+# Set this to never to disable the checksum verification or
+# one of "daily", "weekly", "monthly" to enable it
+debsums_enabled: no
+debsums_cron_check: daily

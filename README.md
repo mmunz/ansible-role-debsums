@@ -1,0 +1,29 @@
+c1.debdums
+==========
+
+Installs and configure debsums.
+
+Role Variables
+--------------
+
+- debsums_enabled: no
+  - yes to enable. Default is no.
+- debsums_cron_check: daily
+  - Set this to never to disable the checksum verification or one of "daily", "weekly", "monthly" to enable it.
+    Default is daily.
+ 
+Example Playbook
+----------------
+
+Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
+
+    - hosts: servers
+      roles:
+         - role: c1.debdums
+           debsums_enabled: yes
+           debsums_cron_check: daily
+
+License
+-------
+
+BSD
